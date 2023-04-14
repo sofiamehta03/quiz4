@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  name: MySelfHostedAgents
+
+steps:
+- script: |
+    dotnet build
+    dotnet test
+  displayName: 'Build and test'
