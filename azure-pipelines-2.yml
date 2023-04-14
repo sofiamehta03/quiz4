@@ -1,0 +1,11 @@
+trigger:
+- main
+
+pool:
+  name: quiz4
+
+steps:
+- script: |
+    dotnet build
+    dotnet test
+  displayName: 'Build and test'
